@@ -1,0 +1,210 @@
+@media screen and (max-width: 330px) {
+    .text-container > .text-cont{
+        font-size: 18px;
+        text-align: center;
+    }
+    .links{
+       font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width: 615px) {
+    .heading-section > .image > img:last-child{
+        display: block;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        margin-top: 1rem;
+    }
+
+    .prev-skills{
+        margin-bottom: 3rem;
+    }
+
+    .container{
+        overflow: hidden;
+        position: relative;
+        width: 80%;
+        height: 100%;
+        margin-bottom: 10%;
+        height: auto;
+    }
+
+    .heading-section > .image > img{
+        display: none;
+    }
+    .text-preview{
+        display: grid;
+        gap: 1rem;
+    }
+    /* .text-preview > .lang{
+        display: none;
+    } */
+
+    .header,
+    .header.links-active{
+        display: block;
+        border: none;
+        width: 100%;
+        height: 100%;
+        /* background-color: #fff; */
+    }
+
+    .langs{
+        left: -100%;
+    }
+
+    .langs.lang-active{
+        left: 0;
+    }
+
+    .langs,
+    .langs.lang-active{
+        transition: .5s;
+        position: absolute;
+        display: block;
+        /* writing-mode: vertical-lr; */
+        bottom: 5%;
+        font-size: 30px;
+        right: 0;
+    }
+
+    .navigation{
+        position: absolute;
+        left: -100%;
+        transition: .5s;
+        background-color: #fff;
+    }
+
+    .text-preview > .lang{
+        display: none;
+        position: absolute;
+    }
+
+    .navigation,
+    .navigation.page-active{
+        display: grid;
+        gap: 3rem;
+        width: 100%;
+        height: 70%;
+        padding-top: 3rem;
+        padding-bottom: 15rem;
+    }
+
+    .btn-ham{
+        display: block;
+        position: absolute;
+        z-index: 999;
+        right: 0.5rem;
+        top: 3rem;
+    }
+
+    .menu-btn{
+        display: block;
+        position: relative;
+        width: 45px;
+        height: 45px;
+        /* border: 1px solid #121212; */
+    }
+    .menu-btn span,
+    .menu-btn span::after,
+    .menu-btn span::before{
+        display: block;
+        position: absolute;
+        top: calc(50% - 1px);
+        left: calc(50% - 12.5px);
+        width: 25px;
+        height: 2px;
+        background-color: #121212;
+        transition: 0.4s;
+    }
+
+    .menu-btn span::after,
+    .menu-btn span::before{
+        display: block;
+        content: '';
+    }
+
+    .menu-btn span::after{
+        transform: translateY(-8px);
+    }
+
+    .menu-btn span::before{
+        transform: translateY(8px);
+    }
+
+    .menu-btn.active span{
+        height: 0;
+    }
+
+    .menu-btn.active span::after{
+        transform: rotate(-45deg);
+        transform-origin: center;
+    }
+    .menu-btn.active span::before{
+        transform: rotate(45deg);
+        transform-origin: center;
+    }
+    .navigation > a,
+    .navigation.page-active > a{
+        display: grid;
+        gap: 3rem;
+        font-size: 30px;
+        z-index: 777;
+    }
+
+    .navigation.page-active,
+    .langs.lang-active{
+        left: 0;
+        background-color: #fff;
+    }
+
+    .heading-section{
+        margin: 3rem 0;
+    }
+}
+
+
+@media screen and (max-width: 880px) {
+    .cards-skills{
+        display: grid;
+        justify-content: center;
+        gap: 3rem;
+    }
+    .container-card{
+        height: auto;
+    }
+    .photoshop,
+    .illustrator,
+    .after-effects,
+    .figma{
+    gap: 1rem;
+    }
+    .figma:last-child{
+        gap: 1.5rem;
+    }
+    .container-card{
+        padding: 3rem;
+    }
+
+    .text-container > .heading{
+        font-size: 24px;
+    }
+
+    .container{
+        height: 60%;
+    }
+}
+
+@media screen and (max-width: 1356px) {
+    .container{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .container{
+        height: 70%;
+    }
+}
