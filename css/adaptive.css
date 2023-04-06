@@ -26,7 +26,7 @@
         overflow: hidden;
         position: relative;
         width: 80%;
-        height: 100%;
+        height: 100vh;
         margin-bottom: 10%;
         height: auto;
     }
@@ -38,9 +38,10 @@
         display: grid;
         gap: 1rem;
     }
-    /* .text-preview > .lang{
-        display: none;
-    } */
+
+    .second-section{
+        height: 70vh;
+    }
 
     .header,
     .header.links-active{
