@@ -9,6 +9,16 @@
 
 }
 
+@media screen and (min-width: 400px) {
+    .heading-section{
+        height: 60%;
+    }
+
+    .heading-section > .image > img:last-child{
+        height: 60%;
+    }
+}
+
 
 @media screen and (max-width: 615px) {
     .heading-section > .image > img:last-child{
@@ -27,9 +37,9 @@
         margin-bottom: 3rem;
     }
 
-    body{
+    /* body{
         position: relative;
-    }
+    } */
 
     .container{
         width: 80%;
@@ -178,7 +188,8 @@
     }
 
     .heading-section{
-        margin: 3rem 0;
+        margin: 3rem 0 0 0;
+        height: min-content;
     }
 }
 
